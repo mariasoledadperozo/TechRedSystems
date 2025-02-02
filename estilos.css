@@ -1,0 +1,558 @@
+/*General*/
+
+body {
+    font-family: 'Inter', Arial;
+    padding: 0; 
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Fin general*/
+
+/*menu claro*/
+
+#menu-claro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 14rem;
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    height: 5.5rem;
+    width: 100%;
+    align-items: center;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#menu-claro > img {
+    height: 3.5rem;
+}
+
+#menu-claro > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-claro > ul > li {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #323232;
+    position: relative;
+    cursor: pointer;
+}
+
+#menu-claro > ul > li > ul > li{
+    list-style: none;
+}
+
+#menu-claro > ul > li > img {
+    transition: transform 0.3s ease;
+}
+
+#menu-claro > ul > li:hover > img {
+    transform: rotate(-180deg);
+}
+
+#menu-claro > ul > li > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#menu-claro > ul > li:hover > ul {
+    display: block;
+}
+
+#menu-claro > ul > li > ul > li {
+    text-transform: none;
+    letter-spacing: normal;
+    width: 200px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+#menu-claro > ul > li > ul > li:hover {
+    background-color: #f0f0f0;
+}
+
+/*Fin menu claro*/
+
+/*Menu oscuro*/
+
+#menu-oscuro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 14rem;
+    position: fixed;
+    background-color: #005D98; 
+    top: 0;
+    height: 5.5rem;
+    width: 100%;
+    align-items: center;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#menu-oscuro > img {
+    height: 3.5rem;
+}
+
+#menu-oscuro > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-oscuro > ul > li {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #ffff;
+    position: relative;
+    cursor: pointer;
+}
+
+#menu-oscuro > ul > li > ul > li{
+    list-style: none;
+}
+
+#menu-oscuro > ul > li > img {
+    transition: transform 0.3s ease;
+}
+
+#menu-oscuro > ul > li:hover > img {
+    transform: rotate(-180deg);
+}
+
+#menu-oscuro > ul > li > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#menu-oscuro > ul > li:hover > ul {
+    display: block;
+}
+
+#menu-oscuro > ul > li > ul > li {
+    text-transform: none;
+    letter-spacing: normal;
+    width: 200px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+#menu-oscuro > ul > li > ul > li:hover {
+    background-color: #f0f0f0;
+}
+
+/*Fin menu oscuro*/
+
+/* Main */
+
+main {
+    margin-top: 8rem;
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main > article {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+main > article > p {
+    color: #606060;
+}
+
+main > article > h1 {
+    font-weight: 400;
+    color: #323232;
+    font-size: 48px;
+    width: 30rem; 
+    margin: 0;
+}
+
+main > article > h1 > span {
+    font-weight: bolder;
+    color: #005D98;
+}
+
+main > article > section {
+    display: flex;
+    gap: 30px; 
+}
+
+main > article > section > p {
+    color: #606060;
+    font-size: 13px;
+}
+
+main > article > section > p > span {
+    font-size: 36px;
+    font-weight: bold;
+    color: #005D98;
+}
+
+main > img {
+    width: 35%;
+}
+/* Fin main */ 
+
+/*Seccion servicios*/
+
+#seccion-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding: 2rem;
+}
+
+.servicios-intro {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+.servicios-intro h2 {
+    font-weight: 400;
+    color: #323232;
+    font-size: 48px;
+    margin: 0 0 1rem 0;
+}
+
+.servicios-intro h2 span {
+    font-weight: bold;
+    color: #005D98;
+}
+
+.servicios-intro p {
+    color: #606060;
+    line-height: 1.6;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.servicio {
+    position: relative;
+    height: 432px;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.servicio h3 {
+    margin: 0;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+}
+
+.servicio p {
+    margin-top: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.servicio::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    z-index: 1;
+}
+
+.servicio:hover p {
+    opacity: 1;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.servicio:hover::before {
+    height: 100%;
+}
+
+.diseño-web { background-image: url(assets/Atomo_Foto_Diseño\ Web.jpg); }
+.campus-online { background-image: url(assets/Atomo_Foto_Campus\ Online.jpg); }
+.comercio-electronico { background-image: url(assets/Atomo_Foto_Comercio\ electronico.png); }
+.gestion-rrss { background-image: url(assets/Atomo_Foto_Gestion.png); }
+.posicionamiento-seo { background-image: url(assets/Atomo_Foto_SEOSEM.png); }
+.formacion-medida { background-image: url(assets/Atomo_Foto_Formacion\ a\ medida.png); }
+
+
+/*Fin servicios*/
+
+/*Botones*/
+.boton-principal, .boton-secundario{
+    border: none; 
+    padding: 10px; 
+    width: 174px; 
+    height: 52px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Inter', Arial;
+    text-transform: uppercase;
+}
+
+.boton-principal{
+    background-color: #005D98;
+    color: #ffff; 
+}
+
+.boton-secundario{
+    background-color: #ffffff;
+    color:#005D98;
+    border: solid #005D98 2px; 
+}
+
+.boton-principal > img, .boton-secundario > img{
+    margin-left: 10px;
+    width: 15px; 
+}
+/*Fin Botones*/ 
+
+/*Inicio clientes*/
+
+
+#seccion-clientes {
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px; 
+    padding-bottom: 40px;
+}
+
+#seccion-clientes h2 {
+    font-weight: 400;
+    color: #323232;
+    font-size: 48px;
+    width: 30rem; 
+    margin: 0;
+    text-align: center;
+}
+
+#seccion-clientes h2 span {
+    font-weight: bolder;
+    color: #005D98;
+}
+
+#seccion-clientes div {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    flex-direction: row;
+    width: 90%; 
+    gap: 25px; 
+}
+
+
+#seccion-clientes div section {
+    width: 400px; 
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 10px 22px 7px rgba(0,0,0,0.22);
+    margin-bottom: 25px;
+}
+
+#seccion-clientes div section h3 {
+    font-weight: 400;
+    color: #323232; 
+    text-align: center;
+    margin: 20px 0px 3px 0px; 
+}
+
+#seccion-clientes div section span {
+    color: #606060;
+    text-align: center;
+}
+
+#seccion-clientes div section p {
+    width: 300px; 
+    text-align: center;
+    color: #323232;
+}
+
+#seccion-clientes > img {
+    width: 5rem;
+    height: 5rem;  
+    position: absolute; 
+}
+
+/*Fin clientes*/ 
+
+/*Seccion experiencia*/
+
+#seccion-experiencia {
+    background-color: #f4f5f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: visible;
+}
+
+#seccion-experiencia > h2{
+    font-weight: 400;
+    color: #323232;
+    font-size: 1.5rem;
+    width: 20rem; 
+    margin: 40px 0px 20px 0px;
+    text-align: center;
+}
+
+#seccion-experiencia > h2 > span, #seccion-experiencia > section > div > h4 {
+    font-weight: 900;
+    color: #005D98;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#seccion-experiencia > section > div > h4 {
+    margin: 35px 0px -8px 0px;
+}
+
+#seccion-experiencia > section > div {
+    width: 205px; 
+    height: 185px;
+    margin-bottom: 4rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 9px 28px -4px rgba(0,0,0,0.31);
+    background-color: #ffff;
+    text-align: center;
+}
+
+#seccion-experiencia > section > div > p {
+    color: #606060;
+    width: 10rem; 
+}
+
+#seccion-experiencia > section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+/*Fin experiencia*/
+
+/*Contacto*/
+
+#seccion-contacto {
+    width: 80%; 
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#seccion-contacto > h2 {
+    font-weight: 400;
+    color: #323232;
+    font-size: 50px;
+    width: 40rem; 
+    margin: 3rem 0rem 1rem 0rem;
+}
+
+#seccion-contacto > h2 > span {
+    font-weight: bolder;
+    color: #005D98;
+}
+
+#seccion-contacto > p {
+    color: #606060;
+    width: 40rem; 
+    margin-bottom: 2rem;
+}
+
+/*Fin contacto*/ 
+
+/*Footer*/
+
+footer {
+    background-color: #005D98;
+    margin-top: 10rem;
+    width: 100%;
+    z-index: -1;
+    color: #ffff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+}
+
+footer > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px; 
+}
+
+footer > ul > li {
+    list-style: none;
+}
+
+footer > p > a {
+    color: inherit;
+    text-decoration: none;
+}
+/*Fin footer*/
